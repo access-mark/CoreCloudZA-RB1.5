@@ -444,3 +444,73 @@ a.featured-card:hover{
 /* Linked glass cards: full-card navigation without inline text links */
 a.glass.linked-card{display:block;border-color:rgba(216,179,74,.18);}
 a.glass.linked-card:hover{background:rgba(255,255,255,.055);}
+
+/* ==========================================================
+   RB1.5.1 PRODUCTION POLISH PATCH
+   - Fix Run Assessment pill styling
+   - Add breathing room to partner cards
+   - Preserve premium CoreCloud look
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   RUN ASSESSMENT CTA
+   ---------------------------------------------------------- */
+
+.nav-cta,
+.run-assessment-btn,
+a.nav-cta,
+a.run-assessment-btn {
+    text-decoration: none !important;
+}
+
+.nav-cta:hover,
+.run-assessment-btn:hover,
+a.nav-cta:hover,
+a.run-assessment-btn:hover {
+    text-decoration: none !important;
+}
+
+.nav-cta {
+    border-radius: 999px;
+    padding: 0.8rem 1.4rem;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------------------
+   PARTNER CARD SPACING
+   ---------------------------------------------------------- */
+
+.partner-card {
+    padding-top: 2rem !important;
+}
+
+/* Logo spacing */
+
+.partner-card img,
+.partner-card-logo,
+.partner-logo {
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem !important;
+}
+
+/* Ensure content breathes */
+
+.partner-card .card-content,
+.partner-card-content {
+    padding-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------
+   CONSISTENT CARD VERTICAL RHYTHM
+   ---------------------------------------------------------- */
+
+.partner-card h3,
+.partner-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.partner-card p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
